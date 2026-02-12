@@ -19,7 +19,7 @@ export const UserLoginForm = () => {
       reset();
       // navigate("/");
       setTimeout(() => {
-        window.location.href = "http://localhost:5173/my-task"; // redirect here (dashboard)
+        window.location.href = "http://localhost:5173/my-task"; // redirect here 
       }, 500);
     } catch (error) {
       alert(error.response?.data?.message || "User login failed");

@@ -54,7 +54,7 @@ export const TaskList = () => {
                 <th className="border px-4 py-2">Description</th>
                 <th className="border px-4 py-2">Status</th>
                 <th className="border px-4 py-2">View</th>
-                {auth?.role === "user" && (
+                {auth?.role === "user" || "admin" && (
                   <th className="border px-4 py-2">Update</th>
                 )}
               </tr>
@@ -82,7 +82,7 @@ export const TaskList = () => {
                       </button>
                     </td>
 
-                    {auth.role === "user" && (
+                    {auth.role === "user" || "admin" && (
                       <td className="border px-4 py-2">
                         <button
                           onClick={() => navigate(`/task-update/${task._id}`)}

@@ -23,7 +23,7 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-black transition">
               About
             </Link>
-            <Link to="/profile" className="hover:text-black transition">
+            {/* <Link to="/profile" className="hover:text-black transition">
               Profile
             </Link>
             {auth.role === "admin" ? (
@@ -38,7 +38,7 @@ const Navbar = () => {
             </Link>
             <Link to="/task-add" className="hover:text-black transition">
               Add Task
-            </Link>
+            </Link> */}
 
             {auth.isAuth === false ? (
               <div className="flex space-x-3">
@@ -50,9 +50,27 @@ const Navbar = () => {
                 </Link>
               </div>
             ) : (
-              <Link to="/logout" className="hover:text-black transition">
-                Logout
-              </Link>
+              <div className="flex space-x-6">
+                <Link to="/profile" className="hover:text-black transition">
+                  Profile
+                </Link>
+                {auth.role === "admin" ? (
+                  <Link to="/tasks" className="hover:text-black transition">
+                    All Task
+                  </Link>
+                ) : (
+                  ""
+                )}
+                <Link to="/my-task" className="hover:text-black transition">
+                  My Task
+                </Link>
+                <Link to="/task-add" className="hover:text-black transition">
+                  Add Task
+                </Link>
+                <Link to="/logout" className="hover:text-black transition">
+                  Logout
+                </Link>
+              </div>
             )}
 
             {/* <Link to="/login" className="hover:text-black transition">
@@ -86,7 +104,7 @@ const Navbar = () => {
             <Link to="/about" className="hover:text-black transition">
               About
             </Link>
-            <Link to="/profile" className="hover:text-black transition">
+            {/* <Link to="/profile" className="hover:text-black transition">
               Profile
             </Link>
             {auth.role === "admin" ? (
@@ -101,24 +119,39 @@ const Navbar = () => {
             </Link>
             <Link to="/task-add" className="hover:text-black transition">
               Add Task
-            </Link>
+            </Link> */}
 
             {auth.isAuth === false ? (
-              <div className="flex flex-col">
+              <div className="flex flex-col space-y-3">
                 <Link to="/login" className="hover:text-black transition">
                   Login
                 </Link>
-                <Link
-                  to="/register"
-                  className="hover:text-black transition my-3"
-                >
+                <Link to="/register" className="hover:text-black transition">
                   Register
                 </Link>
               </div>
             ) : (
-              <Link to="/logout" className="hover:text-black transition">
-                Logout
-              </Link>
+              <div className="flex flex-col space-y-3">
+                <Link to="/profile" className="hover:text-black transition">
+                  Profile
+                </Link>
+                {auth.role === "admin" ? (
+                  <Link to="/tasks" className="hover:text-black transition">
+                    All Task
+                  </Link>
+                ) : (
+                  ""
+                )}
+                <Link to="/my-task" className="hover:text-black transition">
+                  My Task
+                </Link>
+                <Link to="/task-add" className="hover:text-black transition">
+                  Add Task
+                </Link>
+                <Link to="/logout" className="hover:text-black transition">
+                  Logout
+                </Link>
+              </div>
             )}
 
             {/* <Link to="/login" className="hover:text-black transition">

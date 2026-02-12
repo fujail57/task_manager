@@ -40,7 +40,7 @@ const routes = createBrowserRouter([
 
   // ::::::::admin / agent :::::::::::::
   {
-    element: <ProtectedRoute allowedRoles={["user"]} />,
+    element: <ProtectedRoute allowedRoles={["user" , "admin"]} />,
     children: [
       {
         element: <UserLayout />,

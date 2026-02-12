@@ -8,11 +8,15 @@ A task management application with user authentication and CRUD operations.
   - Sign up and login functionality
   - JWT token-based authentication
   - Secure password hashing
+  - Role based access controll
+  - logout functionality
 
 - **Task Management**
   - Add new tasks
   - View tasks
   - Update existing tasks
+  - Conditional rendering
+  - Admin can view all task and update it
 
 ## Tech Stack
 

@@ -19,7 +19,7 @@ const Logout = () => {
         // navigate("/login");
 
         setTimeout(() => {
-          window.location.href = "http://localhost:5173/login"; // redirect here (dashboard)
+          window.location.href = "http://localhost:5173/login"; // redirect here 
         }, 500);
         // alert("Loged out successfully");
       } catch (error) {
