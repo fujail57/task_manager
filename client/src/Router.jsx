@@ -10,7 +10,7 @@ import { About } from "./components/About";
 import { PublicLayout } from "./layout/PublicLayout";
 import { Unauthorized } from "./components/Unauthorized";
 
-import { UserLayout } from "./layout/userLayout";
+import { UserLayout } from "./layout/UserLayout";
 import { Profile } from "./user/profile/Profile";
 import { MyTasks } from "./task/MyTasks";
 import { ViewTask } from "./task/ViewTask";
