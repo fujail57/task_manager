@@ -19,7 +19,8 @@ const Logout = () => {
         // navigate("/login");
 
         setTimeout(() => {
-          window.location.href = "http://localhost:5173/login"; // redirect here 
+          // window.location.href = "http://localhost:5173/login"; // redirect here 
+          window.location.href = `${import.meta.env.VITE_FRONTEND}/login`; // redirect here 
         }, 500);
         // alert("Loged out successfully");
       } catch (error) {

@@ -7,7 +7,6 @@ export const UserLogin = () => {
     <div>
       
       <fieldset>
-        <legend>User Login</legend>
         <UserLoginForm />
       </fieldset>
     </div>

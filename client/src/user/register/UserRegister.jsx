@@ -5,7 +5,6 @@ export const UserRegister = () => {
   return (
     <div>
       <fieldset>
-        <legend>User Signup</legend>
         <UserRegisterForm />
       </fieldset>
     </div>
