@@ -45,6 +45,9 @@ const Navbar = () => {
             <Link to="/register" className="hover:text-black transition">
               Register
             </Link>
+            <Link to="/logout" className="hover:text-black transition">
+              Logout
+            </Link>
           </div>
 
           {/* Hamburger Button */}
@@ -70,7 +73,7 @@ const Navbar = () => {
             <Link to="/profile" className="hover:text-black transition">
               Profile
             </Link>
-            {auth.role === "user" ? (
+            {auth.role === "admin" ? (
               <Link to="/tasks" className="hover:text-black transition">
                 All Task
               </Link>
@@ -88,6 +91,9 @@ const Navbar = () => {
             </Link>
             <Link to="/register" className="hover:text-black transition">
               Register
+            </Link>
+            <Link to="/logout" className="hover:text-black transition">
+              Logout
             </Link>
           </div>
         )}

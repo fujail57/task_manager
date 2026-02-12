@@ -18,6 +18,7 @@ import { AddTask } from "./task/AddTask";
 import { UpdateTask } from "./task/UpdateTask";
 import { TaskList } from "./task/TaskList";
 import { AdminLayout } from "./layout/AdminLayout";
+import Logout from "./user/logout/Logout";
 
 // ::::::::::::::::::::::::::::::::: ROUTER :::::::::::::::::::::::::::::::
 
@@ -28,6 +29,7 @@ const routes = createBrowserRouter([
     children: [
       { path: "/register", element: <UserRegister /> },
       { path: "/login", element: <UserLogin /> },
+      { path: "/logout", element: <Logout /> },
       { path: "/unauthorized", element: <Unauthorized /> },
 
       // :::
