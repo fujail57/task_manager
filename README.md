@@ -4,6 +4,9 @@ A task management application with user authentication and CRUD operations.
 
 ## Features
 
+- **Live URL**
+  - [Task Manager](https://taskmanager-1q1x.onrender.com/)
+
 - **User Authentication**
   - Sign up and login functionality
   - JWT token-based authentication
