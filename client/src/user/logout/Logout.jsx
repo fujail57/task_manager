@@ -16,7 +16,11 @@ const Logout = () => {
         auth.user === null;
 
         // Redirect to login page
-        navigate("/login");
+        // navigate("/login");
+
+        setTimeout(() => {
+          window.location.href = "http://localhost:5173/login"; // redirect here (dashboard)
+        }, 500);
         // alert("Loged out successfully");
       } catch (error) {
         console.error("Logout failed:", error);

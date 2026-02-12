@@ -19,7 +19,7 @@ export const AddTask = () => {
       const response = await axiosInstance.post("/task", data);
       alert("New Task added Successfully");
       reset();
-      navigate("/");
+      navigate("/my-task");
     } catch (error) {
       console.log("Task can't add", error);
       // alert("Task can't add");

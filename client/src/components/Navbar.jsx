@@ -39,15 +39,31 @@ const Navbar = () => {
             <Link to="/task-add" className="hover:text-black transition">
               Add Task
             </Link>
-            <Link to="/login" className="hover:text-black transition">
+
+            {auth.isAuth === false ? (
+              <div className="flex space-x-3">
+                <Link to="/login" className="hover:text-black transition">
+                  Login
+                </Link>
+                <Link to="/register" className="hover:text-black transition">
+                  Register
+                </Link>
+              </div>
+            ) : (
+              <Link to="/logout" className="hover:text-black transition">
+                Logout
+              </Link>
+            )}
+
+            {/* <Link to="/login" className="hover:text-black transition">
               Login
-            </Link>
-            <Link to="/register" className="hover:text-black transition">
+            </Link> */}
+            {/* <Link to="/register" className="hover:text-black transition">
               Register
-            </Link>
-            <Link to="/logout" className="hover:text-black transition">
+            </Link> */}
+            {/* <Link to="/logout" className="hover:text-black transition">
               Logout
-            </Link>
+            </Link> */}
           </div>
 
           {/* Hamburger Button */}
@@ -86,7 +102,26 @@ const Navbar = () => {
             <Link to="/task-add" className="hover:text-black transition">
               Add Task
             </Link>
-            <Link to="/login" className="hover:text-black transition">
+
+            {auth.isAuth === false ? (
+              <div className="flex flex-col">
+                <Link to="/login" className="hover:text-black transition">
+                  Login
+                </Link>
+                <Link
+                  to="/register"
+                  className="hover:text-black transition my-3"
+                >
+                  Register
+                </Link>
+              </div>
+            ) : (
+              <Link to="/logout" className="hover:text-black transition">
+                Logout
+              </Link>
+            )}
+
+            {/* <Link to="/login" className="hover:text-black transition">
               Login
             </Link>
             <Link to="/register" className="hover:text-black transition">
@@ -94,7 +129,7 @@ const Navbar = () => {
             </Link>
             <Link to="/logout" className="hover:text-black transition">
               Logout
-            </Link>
+            </Link> */}
           </div>
         )}
       </div>
